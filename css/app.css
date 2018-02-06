@@ -1,0 +1,40 @@
+body{
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 20px;
+}
+.container-fluid h1{
+	font-family: 'Pacifico', sans-serif;
+}
+.row{
+	border: 1px solid red;
+}
+.column{
+	border: 1px solid purple;
+}
+#description-container{
+	margin-top: 2em;
+}
+#description-container #bienvenida{
+	font-size: 50px;
+}
+#certificados-container{
+	background-color: #ebebeb;
+}
+#description-container .row,
+#certificados-container .row,
+#proyectos-container .row{
+	padding: 1em 0;
+}
+#contacto-container{
+	padding: 1em 0;
+}
+#contacto-container .form-group{
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+#contacto-container button{
+	margin-bottom: 0.5em;
+}
+#footer-container .fa{
+	color: black;
+}
