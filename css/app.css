@@ -25,6 +25,9 @@ body{
 #proyectos-container .row{
 	padding: 1em 0;
 }
+#proyectos-container figcaption{
+	color: #6c757d;
+}
 #contacto-container{
 	padding: 1em 0;
 }
