@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
+    
+    <!-- Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
 
     <title>Portafolio</title>
   </head>
@@ -23,19 +26,19 @@
           <h1>Fernando J Pineda</h1>
         </div>
         <div class="col-lg-6 offset-lg-2 column">
-          <nav class="navbar navbar-light navbar-expand-md">
+          <nav class="navbar fixed-top navbar-light navbar-expand-md">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#bienvenida">Sobre mi</a>
+                <a class="nav-link" data-scroll href="#description-container">Sobre mi</a>
               </li>
-              <li>
-                <a class="nav-link" href="#certificados-container">Certificados</a>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll href="#certificados-container">Certificados</a>
               </li>
-              <li>
-                <a class="nav-link" href="#proyectos-container">Proyectos</a>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll href="#proyectos-container">Proyectos</a>
               </li>
-              <li>
-                <a class="nav-link" href="#contacto-container">Contacto</a>
+              <li class="nav-item" >
+                <a class="nav-link" data-scroll href="#contacto-container">Contacto</a>
               </li>
             </ul>
           </nav>          
@@ -184,10 +187,14 @@
 
     <!-- /Footer -->
 
-
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     
 
     <!-- Optional JavaScript -->
+    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
