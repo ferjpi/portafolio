@@ -2,7 +2,13 @@ body{
 	font-family: 'Nanum Pen Script', sans-serif;
 	font-size: 20px;
 }
-
+#mobile-container .navbar.navbar-expand-md{
+	background-color: #3e615b;
+}
+#mobile-container #logo h1,
+#mobile-container #desplegable .nav-item .nav-link{
+	color: white;
+}
 #mobile-container button{
 	outline: 0;
 	width: 100%;
@@ -21,12 +27,12 @@ body{
 .container-fluid .navbar-light .navbar-nav .nav-link{
 	color: black;
 }
-.row{
+/*.row{
 	border: 1px solid red;
 }
 .column{
 	border: 1px solid purple;
-}
+}*/
 #description-container{
 	margin-top: 2em;
 }
@@ -42,11 +48,16 @@ body{
 #proyectos-container .row{
 	padding: 1em 0;
 }
+#proyectos-container{
+	background-color: #fec100;
+}
 #proyectos-container figcaption{
 	color: #6c757d;
 }
 #contacto-container{
 	padding: 1em 0;
+	background-color: #528078;
+	color: white;
 }
 #contacto-container .form-group{
 	margin-bottom: 0.3em;
@@ -55,8 +66,11 @@ body{
 #contacto-container button{
 	margin-bottom: 0.5em;
 }
+#footer-container{
+	background-color: #3e615b;
+}
 #footer-container .fa{
-	color: black;
+	color: white;
 }
 @media (min-width: 769px){
 	#mobile-container .navbar.navbar-expand-md{
@@ -68,17 +82,32 @@ body{
 	#mobile-container #logo h1{
 		font-size: 1em;
 		text-align: center;
+		color: white;
 	}
 	#mobile-container a.navbar-brand{
 		white-space: unset;
 		width: 100%;
 	}
 	#mobile-container #desplegable .nav-item .nav-link{
-		background-color: pink;
-		border: 1px solid red;
+		background-color: black;
+		color: white;
+		
+	}
+	#mobile-container button{
+		background-color: #fec100;
+		color: black;
+		border: 1px solid #265961;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	#mobile-container .navbar{
+		padding: 0;
 	}
 	.navbar.navbar-expand-md {
     	min-width: 320px;
+	}
+	#desplegable {
+		padding: 0;
 	}
 	#certificados-container .espacio{
 	margin-bottom: 0.3em;
