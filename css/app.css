@@ -27,6 +27,7 @@ body{
 #certificados-container{
 	background-color: #ebebeb;
 }
+
 #description-container .row,
 #certificados-container .row,
 #proyectos-container .row{
@@ -47,4 +48,14 @@ body{
 }
 #footer-container .fa{
 	color: black;
+}
+
+@media (max-width: 768px){
+	#mobile-container h1{
+		font-size: 15px;
+		text-align: center;
+	}
+	#certificados-container .espacio{
+	margin-bottom: 0.3em;
+	}
 }
