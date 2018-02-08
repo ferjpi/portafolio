@@ -73,8 +73,12 @@ body{
 		white-space: unset;
 		width: 100%;
 	}
+	#mobile-container #desplegable .nav-item .nav-link{
+		background-color: pink;
+		border: 1px solid red;
+	}
 	.navbar.navbar-expand-md {
-    	min-width: 300px;
+    	min-width: 320px;
 	}
 	#certificados-container .espacio{
 	margin-bottom: 0.3em;
