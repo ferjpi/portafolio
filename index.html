@@ -26,14 +26,35 @@
     <section id="mobile-container">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-4 column">
-          <h1>Fernando J Pineda</h1>
-        </div>
-          <div class="col-12 col-md-none colum text-center justify-content-center">
-            <button class="navbar-toggler d-sm-none" data-toggle="collapse" type="button" data-target="#desplegable" aria-expanded="false" aria-controls="desplegable">
-              Menu
-            </button>
-          </div>
+          <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-between">
+            <div id="logo" class="col-12 col-md-5 column">
+              <a href="index.html" class="navbar-brand">
+                <h1>Fernando J Pineda</h1>
+              </a>
+            </div>
+            <div id="boton" class="col-12 d-md-none colum text-center justify-content-center">
+              <button class="navbar-toggler collapsed text-center" data-toggle="collapse" type="button" data-target="#desplegable" aria-expanded="false" aria-controls="desplegable" aria-label="Toggle navigation">
+                Menu
+              </button>
+              <!--col-12 col-md-none-->
+            </div>
+            <div id="desplegable" class="navbar-collapse collapse justify-content-end col-md-5 offset-md-2">
+              <ul class="navbar-nav nav text-center flex-column flex-md-row">
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll href="#description-container">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll href="#certificados-container">Certificados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll href="#proyectos-container">Proyectos</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" data-scroll href="#contacto-container">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </section>
@@ -43,7 +64,7 @@
     <!-- Menu-mobile -->
 
 
-    <section id="menu-container" class="navbar-toggleable navbar navbar-light bg-faded">
+    <!-- <section id="menu-container" class="navbar-toggleable navbar navbar-light navbar-expand-md nav bg-faded">
       <div class="navbar-collapse collapse d-sm-block" id="desplegable">
         <div class="container-fluid">
           <div class="row">
@@ -68,7 +89,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <!-- /Menu -->
 
 
@@ -220,11 +242,11 @@
     
 
     <!-- Optional JavaScript -->
-    
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

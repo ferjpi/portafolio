@@ -2,6 +2,15 @@ body{
 	font-family: 'Nanum Pen Script', sans-serif;
 	font-size: 20px;
 }
+
+#mobile-container button{
+	outline: 0;
+	width: 100%;
+}
+#mobile-container #boton{
+	padding-right: 0;
+	padding-left: 0;
+}
 .container-fluid h1{
 	font-family: 'Pacifico', sans-serif;
 }
@@ -49,11 +58,23 @@ body{
 #footer-container .fa{
 	color: black;
 }
+@media (min-width: 769px){
+	#mobile-container .navbar.navbar-expand-md{
+	width: 100%;
+	}	
+}
 
 @media (max-width: 768px){
-	#mobile-container h1{
-		font-size: 15px;
+	#mobile-container #logo h1{
+		font-size: 1em;
 		text-align: center;
+	}
+	#mobile-container a.navbar-brand{
+		white-space: unset;
+		width: 100%;
+	}
+	.navbar.navbar-expand-md {
+    	min-width: 300px;
 	}
 	#certificados-container .espacio{
 	margin-bottom: 0.3em;
