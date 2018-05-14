@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node ./index.html"
+    "start": "node /index.html"
   },
   "author": "ferjpi",
   "dependencies": {
