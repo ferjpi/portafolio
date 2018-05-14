@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node /index.html"
+    "start": "node index.html"
+  },
+  "engines": {
+    "node": "8.11.1"
   },
   "author": "ferjpi",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.2.1",
-    "node": "^8.11.1"
+    "node": "^8.11.1",
+    "yarn": "1.4.0"
   }
 }
