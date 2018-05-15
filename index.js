@@ -1,5 +1,8 @@
-app.set('port', process.env.PORT || 2556);
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 2556
 
-server.listen(app.get('port'), () => {
-  console.log(`server on port ${app.get('port')}`);
-});
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .get('/', (req, res) => res.render('public/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
