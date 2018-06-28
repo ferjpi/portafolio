@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Nanum+Brush+Script|Nanum+Pen+Script|Pacifico" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Acme|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
-    
+
     <!-- Scroll -->
     <script src="js/smooth-scroll.min.js"></script>
 
@@ -68,7 +68,7 @@
 
 
     <!-- Descripcion -->
-    
+
     <section id="description-container">
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -77,7 +77,7 @@
           </div>
           <div class="col-lg-6 offset-lg-2">
             <h3 id="bienvenida">Bienvenido a mi portafolio</h3>
-            <p>Mi nombre es Fernando José Pineda T. de Colombia, soy Ingeniero de Minas en un mundo de programación, mis gustos son simples, me encanta escuchar música y ver series y peliculas. Me considero una persona responsable y comprometido con el trabajo.</p>
+            <p>Hola!, mi nombre es Fernando Pineda, soy de Colombia, soy desarrollador FrontEnd con un gran manejo de framworks como Bootstrap y Foundation, y me encuentro dando mis primeros pasos en React. Mis gustos son simples, me encanta escuchar música y ver series y peliculas. Me considero una persona responsable y comprometido con el trabajo.</p>
           </div>
         </div>
       </div>
@@ -87,21 +87,36 @@
 
 
     <!-- Certificados -->
-    
+
     <section id="certificados-container">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h3 class="text-center">Certificados</h3>
           </div>
-          <div class="col-12 col-sm espacio">
+          <div class="col-12 col-sm-4 espacio">
             <img src="img/diploma-frontend.png" alt="diploma frontend" class="img-fluid">
           </div>
-          <div class="col-12 col-sm espacio">
+          <div class="col-12 col-sm-4 espacio">
             <img src="img/diploma-git-github.png" alt="diploma git & github" class="img-fluid">
           </div>
-          <div class="col-12 col-sm espacio">
+          <div class="col-12 col-sm-4 espacio">
             <img src="img/diploma-programacion-basica.png" alt="diploma programación basica" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-4 espacio">
+            <img src="img/Animaciones_para_la_web.png" alt="diploma animaciones para la web" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-4 espacio">
+            <img src="img/Carrera_arquitectura_frontend.png" alt="Carrera arquitectura frontend" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-4 espacio">
+            <img src="img/Css_grid_layout.png" alt="diploma css grid layout" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-4 espacio">
+            <img src="img/Desarrollo_web_online.png" alt="diploma desarrollo web online" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-4 espacio">
+            <img src="img/Responsive_design.png" alt="diploma responsive design" class="img-fluid">
           </div>
         </div>
       </div>
@@ -112,7 +127,7 @@
 
 
     <!-- Proyectos -->
-    
+
     <section id="proyectos-container">
       <div class="container">
         <div class="row">
@@ -137,6 +152,12 @@
               <figcaption class="text-center">Blog <br/><small>Photo by JESHOOTS.COM on Unsplash</small></figcaption>
             </a>
           </div>
+          <div class="col-lg-4">
+            <a href="https://ferjpi.github.io/movie/">
+              <img class="img-fluid" src="img/cinema.png" alt="cinema">
+              <figcaption class="text-center">World's Movie <br/></figcaption>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -151,11 +172,15 @@
           <div class="col-lg-12">
             <h3 class="text-center">Contacto</h3>
             <p class="text-center text-justify">Si quieres ponerte en contacto conmigo rellena los datos abajo y me pondré en contacto contigo</p>
+            <div class="alert">Tu mensaje a sido enviado</div>
           </div>
           <div class="col-12 col-md-4 offset-md-4">
-            <form action="https://formspree.io/fernandojpt1203@gmail.com" method="POST">
+
+            <form action="https://formspree.io/fernandojpt1203@gmail.com" method="POST" id="contactForm">
+
+            <form id="contactForm">
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="tu@correo.com" name="email">
+                <input type="email" class="form-control" placeholder="tu@correo.com" name="email" id="email">
               </div>
               <div class="form-group">
                 <textarea class="form-control" id="text-area" rows="3" placeholder="Escribe aquí" name="text-area"></textarea>
@@ -164,8 +189,21 @@
                 <input type="submit" class="button btn btn-platzi" value="Enviar">
               </span>
             </form>
+
+            <!-- <form id="contactForm" method="POST" action="https://formspree.io/fernandojpt1203@gmail.com" >
+              <p>
+                <input type="email" name="email" id="email" placeholder="tu@correo" required>
+              </p>
+              <p class="message">
+                <textarea name="message" rows="5" cols="50" id="message" placeholder="Escribe aquí"></textarea>
+              </p>
+              <p class="submit">
+                <input type="submit" class="button btn btn-platzi" value="send">Enviar</input>
+              </p>
+            </form> -->
+
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -174,32 +212,32 @@
 
 
     <!-- Footer -->
-    
+
     <section id="footer-container">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-1 offset-md-1">
-            <a href="www.facebook.com/fernandojt">
+            <a href="www.facebook.com/fernandojt" target="_blank">
               <i class="fa fa-facebook-f"></i>
             </a>
           </div>
           <div class="col-1">
-            <a href="www.instagram.com/fernandojpineda">
+            <a href="www.instagram.com/fernandojpineda" target="_blank">
               <i class="fa fa-instagram"></i>
             </a>
           </div>
           <div class="col-1">
-            <a href="www.twitter.com/fernandojpineda">
+            <a href="www.twitter.com/fernandojpineda" target="_blank">
               <i class="fa fa-twitter"></i>
             </a>
           </div>
           <div class="col-1">
-            <a href="www.linkedin.com/in/fernando-pineda-79453566/">
+            <a href="www.linkedin.com/in/fernando-pineda-trujillo-79453566/" target="_blank">
               <i class="fa fa-linkedin"></i>
             </a>
           </div>
           <div class="col-1">
-            <a href="#">
+            <a href="www.github.com/ferjpi" target="_blank">
               <i class="fa fa-github"></i>
             </a>
           </div>
@@ -212,7 +250,7 @@
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-    
+
 
     <!-- Optional JavaScript -->
 
@@ -221,5 +259,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
