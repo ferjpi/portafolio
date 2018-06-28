@@ -1,8 +1,14 @@
 body{
-	font-family: 'Nanum Pen Script', sans-serif;
+	font-family: 'Acme', sans-serif;
 	font-size: 20px;
 }
-
+#mobile-container .navbar.navbar-expand-md{
+	background-color: #3e615b;
+}
+#mobile-container #logo h1,
+#mobile-container #desplegable .nav-item .nav-link{
+	color: white;
+}
 #mobile-container button{
 	outline: 0;
 	width: 100%;
@@ -14,39 +20,53 @@ body{
 .container-fluid h1{
 	font-family: 'Pacifico', sans-serif;
 }
-.container-fluid .navbar-light .navbar-nav .nav-link:focus, 
+.container-fluid .navbar-light .navbar-nav .nav-link:focus,
 .container-fluid .navbar-light .navbar-nav .nav-link:hover{
 	color: rgba(0,0,0,.7);
 }
 .container-fluid .navbar-light .navbar-nav .nav-link{
 	color: black;
 }
-.row{
+/*.row{
 	border: 1px solid red;
 }
 .column{
 	border: 1px solid purple;
-}
+}*/
 #description-container{
 	margin-top: 2em;
+}
+#description-container p {
+	text-align: justify;
 }
 #description-container #bienvenida{
 	font-size: 50px;
 }
+
+
 #certificados-container{
 	background-color: #ebebeb;
 }
+#certificados-container img {
+	margin: 10px 0;
+}
+
 
 #description-container .row,
 #certificados-container .row,
 #proyectos-container .row{
 	padding: 1em 0;
 }
+#proyectos-container{
+	background-color: #fec100;
+}
 #proyectos-container figcaption{
 	color: #6c757d;
 }
 #contacto-container{
 	padding: 1em 0;
+	background-color: #528078;
+	color: white;
 }
 #contacto-container .form-group{
 	margin-bottom: 0.3em;
@@ -55,30 +75,84 @@ body{
 #contacto-container button{
 	margin-bottom: 0.5em;
 }
-#footer-container .fa{
-	color: black;
+#footer-container{
+	background-color: #3e615b;
 }
+#footer-container .fa{
+	color: white;
+}
+
+
+/* ContactForm */
+.alert {
+	text-align: center;
+	padding: 15px;
+	background: #79c879;
+	color: white;
+	display: none;
+}
+
+#contactForm p{
+	width: 100%;
+}
+#contactForm p:nth-of-type(2){
+	margin-bottom: 4px;
+}
+#email {
+	width: inherit;
+}
+#message {
+	width: inherit;
+}
+.submit button {
+	color: #6c757d;
+}
+
+/* ContactForm */
+
+
+/*Media query*/
+
+
 @media (min-width: 769px){
 	#mobile-container .navbar.navbar-expand-md{
 	width: 100%;
-	}	
+	}
 }
 
 @media (max-width: 768px){
+	#contacto-container form .button {
+		width: 100%;
+	}
 	#mobile-container #logo h1{
 		font-size: 1em;
 		text-align: center;
+		color: white;
 	}
 	#mobile-container a.navbar-brand{
 		white-space: unset;
 		width: 100%;
 	}
 	#mobile-container #desplegable .nav-item .nav-link{
-		background-color: pink;
-		border: 1px solid red;
+		background-color: black;
+		color: white;
+
+	}
+	#mobile-container button{
+		background-color: #fec100;
+		color: black;
+		border: 1px solid #265961;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	#mobile-container .navbar{
+		padding: 0;
 	}
 	.navbar.navbar-expand-md {
     	min-width: 320px;
+	}
+	#desplegable {
+		padding: 0;
 	}
 	#certificados-container .espacio{
 	margin-bottom: 0.3em;
