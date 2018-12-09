@@ -18,9 +18,15 @@
     "yarn": "1.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-eslint": "^10.0.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^4.3.0",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1",
     "request": "^2.81.0",

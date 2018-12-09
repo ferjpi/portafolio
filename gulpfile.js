@@ -3,6 +3,9 @@ const browser = require('browser-sync')
 const clean = require('gulp-clean-css')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
+const img = require('gulp-image')
+const babel = require('gulp-babel')
+const concat = require('gulp-concat')
 
 function html () {
   return src('./src/index.html')
@@ -11,17 +14,28 @@ function html () {
 function css () {
   return src('./src/assets/css/*.css')
     .pipe(dest('./public/css'))
-    .pipe(clean())
+    .pipe(clean({
+      inline: ['none']
+    }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(dest('./public/css'))
-    .pipe(browser.reload({stream: true}))
+    .pipe(browser.reload({ stream: true }))
 }
 function js () {
   return src('./src/assets/js/*.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(concat('app.js'))
     .pipe(dest('./public/js'))
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
     .pipe(dest('./public/js'))
+}
+function images () {
+  return src('./src/assets/img/*')
+    .pipe(img())
+    .pipe(dest('./public/img'))
 }
 
 function watcher () {
@@ -37,8 +51,7 @@ function server (cb) {
   })
   cb()
 }
-
+task('miniImage', series(images))
 task('build', parallel(html, css, js))
 
 task('default', series('build', server, watcher))
-
