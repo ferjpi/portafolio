@@ -40,6 +40,11 @@ window.onload = function () {
 
         scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset)
       })
+
+      // Cerrar el menu mobile si se encuentra activo
+      if (window.screen.width <= 760) {
+        closeMenu()
+      }
     })
   }
 }
