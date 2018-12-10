@@ -11,6 +11,10 @@ function html () {
   return src('./src/index.html')
     .pipe(dest('./public'))
 }
+function copy() {
+  return src('./src/*.ico')
+    .pipe(dest('./public'))
+}
 function css () {
   return src('./src/assets/css/*.css')
     .pipe(dest('./public/css'))
@@ -52,6 +56,6 @@ function server (cb) {
   cb()
 }
 task('miniImage', series(images))
-task('build', parallel(html, css, js))
+task('build', parallel(html, css, js, copy))
 
 task('default', series('build', server, watcher))
