@@ -1,0 +1,189 @@
+
+/******************
+*******Media*******
+*******************/
+
+@media screen and (max-width: 760px) {
+	.hide-on-small {
+		display: none;
+	}
+	body {
+        font-size: 20px;
+        margin: 0;
+	}
+	.container-menu-mobile {
+		display: inline;
+	}
+	.menu-mobile {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		background: #000;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5;
+	}
+	.menu__list {
+		padding: 0;
+	}
+	.menu__item {
+		margin: 60px 0;
+		text-align: center;
+	}
+	.menu-mobile .menu__subitem {
+		color: #fff;
+		z-index: 2;
+	}
+	.menu__subitem:nth-child(1) {
+		border-color: #fff;
+	}
+	.menu__subitem:nth-child(2) {
+		border-color: #fff;
+	}
+	.menu__subitem:nth-child(3) {
+		border-color: #fff;
+	}
+	.btn--close .btn-menu:nth-child(1) {
+		top: 0px;
+		left: 4px;
+		transform: rotate(45deg);
+		border: 2px solid #fff;
+		position: absolute;
+		width: 35px;
+	}
+	.btn--close .btn-menu:nth-child(2) {
+		opacity: 0;
+	}
+	.btn--close .btn-menu:nth-child(3) {
+		top: 0px;
+		left: 4px;
+		transform: rotate(-45deg);
+		border: 2px solid #fff;
+		position: absolute;
+		width: 35px;
+	}
+	.btn {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		z-index: 9999;
+	}
+	.btn.btn--close {
+		top: 16px;
+		right: 22px;
+	}
+	.btn-menu {
+		border: 2px solid #000;
+		width: 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+		transition: .3s ease-in-out;
+	}
+	
+	nav {
+		display: flex;
+	}
+	.title {
+		font-size: 44px;
+		width: unset;
+		margin-left: 50px;
+	}
+	.title--center {
+		text-align: left;
+		margin-left: 0;
+	}
+	.name {
+		font-size: 34px;
+	}
+	.name__2 {
+		margin-left: 118px;
+	}
+	.name__4 {
+		margin-left: 41px;
+	}
+	.box--left {
+		width: 250px;
+		height: 187px;
+		top: 210px;
+		left: 112px;
+	}
+	.grillado {
+		grid-template-columns: 1fr;
+		grid-gap: 8px;
+	}
+	.item {
+		width: 259px;
+		height: 200px;
+	}
+	.grillado__images {
+		height: 200px;
+		border-width: 4px;
+	}
+	.grillado__cuerpo {
+		font-size: 11px;
+		padding: 4px 0 0 4px;
+		bottom: 0;
+		left: 0;
+		background: none;
+		width: unset;
+	}
+	.contacto__email {
+		font-size: 18px;
+	}
+	.container--height {
+		height: 62vh;
+	}
+	.container-heart {
+		justify-content: center;
+	}
+	.container {
+		grid-template-columns: none;
+		padding: 0 50px;
+	}
+	.layout--active {
+			position: relative;
+			background: #000;
+			width: 100vh;
+			height: 100vh;
+			z-index: 1;
+}
+	
+	@keyframes menuIn {
+		0% {
+		  transform: translateX(5000px)
+		}
+		60% {
+		  transform: translateX(900px)
+		}
+		75% {
+		  transform: translateX(500px)
+		}
+		90% {
+		  transform: translateX(50px)
+		}
+		100% {
+		  transform: translateX(0px)
+		}
+	  }
+	  @keyframes menuOut {
+		0% {
+		  transform: translateX(0px)
+		}
+		60% {
+		  transform: translateX(50px)
+		}
+		75% {
+		  transform: translateX(500px)
+		}
+		90% {
+		  transform: translateX(900px)
+		}
+		100% {
+		  transform: translateX(5000px)
+		}
+	  }
+	  
+}
