@@ -1,1 +1,83 @@
-.about{margin-bottom:80px;height:80vh}.container-heart{display:flex;margin:auto;justify-content:left;background-color:#fff;-webkit-font-display:auto;-moz-font-display:auto;-o-font-display:auto;-ms-font-display:auto;font-display:auto;font-family:var(--secondary-font);background-color:var(--primary-color)}.heart{margin-top:20px;position:relative}.c{width:50px;height:50px;background-color:#000;margin:1px}.desvanecer{animation:desvanecer 1s ease-in-out infinite;animation-direction:normal;transition:all .7s}.aparecer{animation:aparecer 1s ease-out;animation-direction:normal}.w{width:50px;height:50px;background-color:var(--primary-color);margin:1px}.row{display:flex}.row-center{justify-content:center}@keyframes desvanecer{0%{transform:scale(1.2)}20%{transform:scale(2)}50%{transform:scale(1.2)}80%{transform:scale(2)}100%{transform:scale(1.2)}}@keyframes aparecer{0%{opacity:0}100%{opacity:1}}@media screen and (max-width:760px){.c{width:20px;height:20px}.w{width:20px;height:20px}}
+.about {
+  margin-bottom: 80px;
+  height: 80vh;
+}
+.container-heart {
+  display: flex;
+  margin: auto;
+  justify-content: left;
+  background-color: #fff;
+  -webkit-font-display: auto;
+  -moz-font-display: auto;
+  -o-font-display: auto;
+  -ms-font-display: auto;
+  font-display: auto;
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+}
+.heart {
+  margin-top: 20px;
+  position: relative;
+}
+.c {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  margin: 1px;
+}
+.desvanecer {
+  animation: desvanecer 1s ease-in-out infinite;
+  animation-direction: normal;
+  transition: all 0.7s;
+}
+.aparecer {
+  animation: aparecer 1s ease-out;
+  animation-direction: normal;
+}
+.w {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  margin: 1px;
+}
+.row {
+  display: flex;
+}
+.row-center {
+  justify-content: center;
+}
+@keyframes desvanecer {
+  0% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 760px) {
+  .c {
+    width: 20px;
+    height: 20px;
+  }
+  .w {
+    width: 20px;
+    height: 20px;
+  }
+}
