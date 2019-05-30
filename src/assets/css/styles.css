@@ -5,11 +5,16 @@
 	--primary-variant: rgb(255,251,190);
 	--secondary-color: rgb(255,85,35);
 	--boxes-color: rgb(185,228,201);
-	--main-font: 'Montserrat';
-	--secondary-font: 'Roboto Mono';
+	--main-font: 'Montserrat', Arial;
+	--secondary-font: 'Roboto Mono', sans-serif;
 }
 
 body {
+	-webkit-font-display: auto;
+    -moz-font-display: auto;
+    -o-font-display: auto;
+    -ms-font-display: auto;
+    font-display: auto;
 	font-family: var(--secondary-font);
 	background-color: var(--primary-color);
 }
@@ -130,22 +135,22 @@ body {
 	width: 400px;
 }
 .image--artista {
-	background-image: url('../img/artista.jpg');
+	background-image: url('../img/artista.webp');
 }
 .image--blog {
-	background-image: url('../img/blog.jpg');
+	background-image: url('../img/blog.webp');
 }
 .image--cinema {
-	background-image: url('../img/cinema.png');
+	background-image: url('../img/cinema.webp');
 }
 .image--gelatos {
-	background-image: url('../img/Gelato.png');
+	background-image: url('../img/Gelato.webp');
 }
 .image--pacho {
-	background-image: url('../img/pacho.png');
+	background-image: url('../img/pacho.webp');
 }
 .image--store {
-	background-image: url('../img/store.png');
+	background-image: url('../img/store.webp');
 }
 
 /******************
