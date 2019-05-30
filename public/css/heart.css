@@ -7,6 +7,11 @@
     margin: auto;
     justify-content: left;
     background-color: white;
+    -webkit-font-display: auto;
+    -moz-font-display: auto;
+    -o-font-display: auto;
+    -ms-font-display: auto;
+    font-display: auto;
     font-family: var(--secondary-font);
 	  background-color: var(--primary-color);
   }
