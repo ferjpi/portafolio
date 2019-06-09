@@ -86,20 +86,70 @@ function closeMenu() {
 window.addEventListener("DOMContentLoaded", function () {
   if (window.navigator.appCodeName.includes("Safari")) {
     var artist = document.querySelector(".image--artista");
-    artist.style.backgroundImage = "./img/artista.jpg";
+    artist.style.backgroundImage = "url('./img/artista.jpg')";
     var blog = document.querySelector(".image--blog");
-    blog.style.backgroundImage = "../img/blog.jpg";
+    blog.style.backgroundImage = "url('../img/blog.jpg')";
     var cinema = document.querySelector(".image--cinema");
-    cinema.style.backgroundImage = "../img/cinema.png";
+    cinema.style.backgroundImage = "url('../img/cinema.png')";
     var gelatos = document.querySelector(".image--gelatos");
-    gelatos.style.backgroundImage = "../img/Gelato.png";
+    gelatos.style.backgroundImage = "url('../img/Gelato.png')";
     var pacho = document.querySelector(".image--pacho");
-    pacho.style.backgroundImage = "../img/pacho.png";
+    pacho.style.backgroundImage = "url('../img/pacho.png')";
     var store = document.querySelector(".image--store");
-    store.style.backgroundImage = "../img/store.png";
+    store.style.backgroundImage = "url('../img/store.png')";
   }
 
-  console.log(window.navigator.appCodeName.includes("Safari"));
+  if (window.navigator.userAgent.includes("Safari")) {
+    var _artist = document.querySelector(".image--artista");
+
+    _artist.style.backgroundImage = "url('./img/artista.jpg')";
+
+    var _blog = document.querySelector(".image--blog");
+
+    _blog.style.backgroundImage = "url('../img/blog.jpg')";
+
+    var _cinema = document.querySelector(".image--cinema");
+
+    _cinema.style.backgroundImage = "url('../img/cinema.png')";
+
+    var _gelatos = document.querySelector(".image--gelatos");
+
+    _gelatos.style.backgroundImage = "url('../img/Gelato.png')";
+
+    var _pacho = document.querySelector(".image--pacho");
+
+    _pacho.style.backgroundImage = "url('../img/pacho.png')";
+
+    var _store = document.querySelector(".image--store");
+
+    _store.style.backgroundImage = "url('../img/store.png')";
+  }
+
+  if (window.navigator.platform !== "Win32") {
+    var _artist2 = document.querySelector(".image--artista");
+
+    _artist2.style.backgroundImage = "url('./img/artista.jpg')";
+
+    var _blog2 = document.querySelector(".image--blog");
+
+    _blog2.style.backgroundImage = "url('../img/blog.jpg')";
+
+    var _cinema2 = document.querySelector(".image--cinema");
+
+    _cinema2.style.backgroundImage = "url('../img/cinema.png')";
+
+    var _gelatos2 = document.querySelector(".image--gelatos");
+
+    _gelatos2.style.backgroundImage = "url('../img/Gelato.png')";
+
+    var _pacho2 = document.querySelector(".image--pacho");
+
+    _pacho2.style.backgroundImage = "url('../img/pacho.png')";
+
+    var _store2 = document.querySelector(".image--store");
+
+    _store2.style.backgroundImage = "url('../img/store.png')";
+  }
 });
 "use strict";
 
