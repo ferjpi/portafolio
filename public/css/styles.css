@@ -3,8 +3,7 @@
   --primary-variant: rgb(255, 251, 190);
   --secondary-color: rgb(255, 85, 35);
   --boxes-color: rgb(185, 228, 201);
-  <<<<<<<HEAD
-	--main-font: "Montserrat", Arial;
+  --main-font: "Montserrat", Arial;
   --secondary-font: "Roboto Mono", sans-serif;
 }
 
@@ -14,15 +13,7 @@ body {
   -o-font-display: auto;
   -ms-font-display: auto;
   font-display: auto;
-  =======--main-font: "Montserrat";
-  --secondary-font: "Roboto Mono";
-}
-
-body {
-  >>>>>>>9c88a5a359925c55728170b31d6a1b072beb055f
-	font-family: var(
-    --secondary-font
-  );
+  font-family: var(--secondary-font);
   background-color: var(--primary-color);
 }
 
@@ -142,6 +133,8 @@ body {
   width: 400px;
 }
 .image--artista {
+  -webkit-background-image: url("../img/artista.webp");
+  -moz-background-image: url("../img/artista.webp");
   background-image: url("../img/artista.webp");
 }
 .image--blog {
