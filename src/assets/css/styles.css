@@ -133,8 +133,6 @@ body {
   width: 400px;
 }
 .image--artista {
-  -webkit-background-image: url("../img/artista.webp");
-  -moz-background-image: url("../img/artista.webp");
   background-image: url("../img/artista.webp");
 }
 .image--blog {

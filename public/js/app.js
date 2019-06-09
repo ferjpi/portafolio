@@ -83,6 +83,26 @@ function closeMenu() {
 // }
 "use strict";
 
+window.addEventListener("DOMContentLoaded", function () {
+  if (window.navigator.appCodeName.includes("Safari")) {
+    var artist = document.querySelector(".image--artista");
+    artist.style.backgroundImage = "./img/artista.jpg";
+    var blog = document.querySelector(".image--blog");
+    blog.style.backgroundImage = "../img/blog.jpg";
+    var cinema = document.querySelector(".image--cinema");
+    cinema.style.backgroundImage = "../img/cinema.png";
+    var gelatos = document.querySelector(".image--gelatos");
+    gelatos.style.backgroundImage = "../img/Gelato.png";
+    var pacho = document.querySelector(".image--pacho");
+    pacho.style.backgroundImage = "../img/pacho.png";
+    var store = document.querySelector(".image--store");
+    store.style.backgroundImage = "../img/store.png";
+  }
+
+  console.log(window.navigator.appCodeName.includes("Safari"));
+});
+"use strict";
+
 var heart = document.querySelector('#heart');
 var cuadro = document.querySelectorAll('.c');
 heart.addEventListener('mouseover', function () {
