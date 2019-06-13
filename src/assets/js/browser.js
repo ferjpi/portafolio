@@ -28,10 +28,10 @@ window.addEventListener("DOMContentLoaded", () => {
     store.style.backgroundImage = "url('../img/store.png')"
   }
   if (window.navigator.platform !== "Win32") {
-    let artist = document.querySelector(".image--presupuesto")
-    artist.style.backgroundImage = "url('./img/money.jpg')"
-    let artist = document.querySelector(".image--despegando")
-    artist.style.backgroundImage = "url('./img/plane.jpg')"
+    let presupuesto = document.querySelector(".image--presupuesto")
+    presupuesto.style.backgroundImage = "url('./img/money.jpg')"
+    let despegando = document.querySelector(".image--despegando")
+    despegando.style.backgroundImage = "url('./img/plane.jpg')"
     let artist = document.querySelector(".image--artista")
     artist.style.backgroundImage = "url('./img/artista.jpg')"
     let blog = document.querySelector(".image--blog")
