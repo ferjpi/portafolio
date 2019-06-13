@@ -132,6 +132,12 @@ body {
   position: relative;
   width: 400px;
 }
+.image--presupuesto {
+  background-image: url("../img/money.webp");
+}
+.image--despegando {
+  background-image: url("../img/plane.webp");
+}
 .image--artista {
   background-image: url("../img/artista.webp");
 }
