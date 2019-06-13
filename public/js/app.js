@@ -126,6 +126,11 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   if (window.navigator.platform !== "Win32") {
+    var presupuesto = document.querySelector(".image--presupuesto");
+    presupuesto.style.backgroundImage = "url('./img/money.jpg')";
+    var despegando = document.querySelector(".image--despegando");
+    despegando.style.backgroundImage = "url('./img/plane.jpg')";
+
     var _artist2 = document.querySelector(".image--artista");
 
     _artist2.style.backgroundImage = "url('./img/artista.jpg')";
